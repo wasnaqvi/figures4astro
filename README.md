@@ -13,11 +13,6 @@ emission spectra with retrieved models, phase curves and maps, T–P profiles
 and posteriors, radial velocities, mass–radius diagrams, and population
 spectral stacks, and pipeline flow charts.
 
-The house style was distilled from about 120 figures in 24 recent papers by the
-Cowan, Dang, Artigau, Bouchy, Helled, Queloz, Komacek and Leconte groups (listed
-in [`references/demos.md`](figures4astro/references/demos.md)). Everything below
-is rendered by [`examples/showcase.py`](examples/showcase.py).
-
 <br>
 
 ### Transmission spectrum with retrieved model and species contributions

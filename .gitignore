@@ -1,0 +1,13 @@
+**/.vscode
+**/__pycache__
+**/.DS_Store
+
+# downloaded inputs for examples/showcase.py (fetched on first run, not redistributed)
+examples/data/
+
+# local renders other than the README gallery
+**/*.npy
+**/*.npz
+**/*.csv
+**/*.pdf
+**/*.svg

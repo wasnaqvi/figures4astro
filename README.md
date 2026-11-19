@@ -10,7 +10,7 @@
 for the figures exoplanet papers actually need: transit and eclipse light
 curves with residuals, spectroscopic light-curve stacks, transmission and
 emission spectra with retrieved models, phase curves and maps, T–P profiles
-and posteriors, radial velocities, mass–radius diagrams, and population
+and posteriors, radial velocities, mass–radius diagrams, population
 spectral stacks, and pipeline flow charts.
 
 <br>

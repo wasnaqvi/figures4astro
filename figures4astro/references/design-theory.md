@@ -19,8 +19,13 @@ ticks on a full-page grid, because they were drawn large and scaled down.
 | MNRAS | 84 mm = 3.31 in | 177 mm = 6.97 in | `(μm)` |
 | Nature / Nat. Astron. | 89 mm | 183 mm | `(μm)`, bold `a b c` tags |
 
-Base font 8 pt (7-9 is the range that matches 9-10 pt caption text). Tick
-labels 0.5 pt smaller, legends 1 pt smaller. Aspect ratios that recur:
+Base font 10.5-11 pt for a paper figure; nothing on the page below 9 pt
+(axis and tick labels 10-11 pt, legends, object names and colour-bar labels
+9.5-10.5 pt). The 7-9 pt range the studied figures use matches the caption
+text on paper but reads as too small in Overleaf and on screen, which is how
+the figures are actually read and refereed; the exoplot default (8 pt) is
+only a floor for dense multi-panel grids. Scale markers and legend handles
+up with the text. Aspect ratios that recur:
 light curve + residuals 0.9 (single column); two visits side by side
 0.35-0.4 (full width); a spectrum 0.6-0.75; a T-P profile taller than wide.
 

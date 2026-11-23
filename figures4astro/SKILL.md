@@ -28,12 +28,17 @@ the figure type in [references/plot-types.md](references/plot-types.md).
    e.g. `figures/exoplot.py`). Do not import it from `~/.claude`: a paper's
    figures must rebuild from the repository alone.
 3. `xp.use_style()` once, then build at **printed size** with
-   `xp.figsize(journal, "single"|"double", aspect)`. Never draw big and shrink:
-   fonts must come out at 7-9 pt on the page.
+   `xp.figsize(journal, "single"|"double", aspect)`. Never draw big and shrink.
+   **Text must be big**: `xp.use_style(fontsize=10.5-11)`, so axis labels and
+   tick labels are 10-11 pt and legends, object names and colour-bar labels
+   9.5-10.5 pt on the page; nothing below 9 pt (7.5 pt only for a number set
+   inside a marker). The exoplot default of 8 pt reads as too small in
+   Overleaf.
 4. Follow the recipe for the figure type; reuse the fixed colour maps
    (`MOLECULE_COLORS`, `INSTRUMENT_COLORS`, `DAYSIDE`/`NIGHTSIDE`, `CMAPS`).
 5. `xp.finalize(fig, "figures/<stem>")` writes **PDF + PNG + SVG**.
-6. **Look at the PNG before calling it done** (Read the image). Check: nothing
+6. **Look at the PNG before calling it done** (Read the image). Check: every
+   label and legend entry readable at printed size, nothing
    clipped, no tick labels colliding where panels meet, legends off the data,
    raw scatter not setting the limits, every axis has a unit.
 
@@ -65,6 +70,13 @@ every figure type — run it to see the style or to check a change to exoplot.
 
 ## House rules
 
+- **Labels and legends must be big and visible.** Axis labels, tick labels,
+  legend text, colour-bar labels and object names are all at least 9.5 pt at
+  printed size (10-11 pt for axes), and markers scale up with them (legend
+  handles at the size of the plotted markers). If a figure goes in at less
+  than full `\textwidth`, scale the fonts up by the same factor. When the
+  bigger text crowds, make the figure taller, shorten or wrap labels
+  (`"NIRSpec\nBOTS"`) or retune label offsets; never shrink the text back.
 - Deliver **PNG + PDF + SVG**, always.
 - **Points are never joined by lines**; a line means a model.
 - **Never overlay two binnings** (e.g. R=100 and R=25) in one panel: make
